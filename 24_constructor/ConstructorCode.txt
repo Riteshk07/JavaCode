@@ -1,0 +1,201 @@
+class A {
+	/*A(){
+		super();	// super no arg call
+	}*/
+}	// default access control will be applied on default constructor 
+	// if default access control is applied on our class 
+
+//********************************************************************
+
+class B {
+	B(){
+		super();	with arg or no argument
+		// this(); 		// user defined constructor 
+			// you can use only super() or this()
+	}
+}
+
+//**************************************************************************
+public class A {
+	/*public A(){
+		super();	// compiler inserted super no arg call
+	}*/
+}	// because class is decleard public that is why compler supplied constructor will be worked public. 
+
+//*********************************************************************************************
+public class B {
+	/*private/protected/public*/B(){
+	}
+}	// user can apply any access control 
+	// constructor can be public/private/proctectedor default 
+
+//*********************************************************************************************
+class B{
+	B(){
+		// super();
+		System.out.println("constructor B");
+	}
+}
+
+class C{
+	C(){
+		// super();
+		System.out.println("constructor C");
+	}
+}
+class A{
+	A(){
+		// super();
+		System.out.println("comstructor A");
+	}
+}
+class X {
+	public static void main (String[]args){
+		new A();
+	}
+}
+//*********************************************************************************************
+
+class A {
+	int x;
+	void golu(){
+		System.out.println("The Golu");
+	}
+	void bholi(){
+		System.out.println("The Bholu");
+	}
+}
+class B extends A{
+	boolean t;
+	char m = 'T';
+	void kalia(){
+		System.out.println("The Kalia");
+}
+	void chutki(){
+		System.out.println("The Chutki");
+	}
+}
+class X{
+	public static void main(String[]args){
+		new B().golu();
+		new B().bholi();
+		new B().kalia();
+		new B().chutki();
+	}
+}
+//***************************************************************************************
+class Book {
+    	private String title;
+    	public Book(String title) {
+        	this.title = title;
+    	}
+    	public String getTitle () {
+        	return title;
+   	}
+}
+
+//*************************************************************************************
+
+class B {
+	int a;
+	float a2;
+	void info(){
+
+	}
+	void pro(){
+
+	}
+}
+
+class A extends B {
+	boolean a3= true;
+	void golu(){
+
+	}
+	public static void main(String[]args){
+		A x = new A();
+	}
+}
+
+//************************************************************************************
+
+import java.util.Scanner;
+class A{
+	A(int x)/*parameter --> formal argument*/{
+		System.out.println("Hello");
+	}
+}
+class X{
+	public static void main(String[]args){
+		System.out.print("Enter Number: ");
+		new A (new Scanner(System.in).nextInt());	/*parameter --> Actual argument*/
+	}
+}
+
+//*********************************************************************************
+
+class A {
+	void A (){
+		System.out.println("hello");
+	}
+}
+class X {
+	public static void main(String[]args){
+		new A();
+	}
+}
+
+
+//******************************************************************************
+class A {
+	void A (){
+		System.out.println("hello");
+	}
+}
+class X {
+	public static void main(String[]args){
+		new A();
+	}
+}
+
+//****************************************************************************
+class A {
+	A(int x){
+		System.out.println("hello");
+	}
+}
+
+class B extends A {
+	public static void main (String[]args){
+		B x = new B();
+	}
+}
+/*
+class B extends A {
+^
+  required: int
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+*/
+//*******************************************************************************
+// Right way
+
+class A {
+	A(int x){
+		System.out.println("hello");
+	}
+}
+
+class B extends A {
+    	B(){
+        super(2);	
+	}
+	public static void main (String[]args){
+
+		B x = new B();
+	}
+}
+//*******************************************************************************
+
+

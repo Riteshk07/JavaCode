@@ -1,0 +1,19 @@
+package A;
+
+abstract public class Bicycle {
+	abstract void frame();
+	abstract void break();
+	void grips(){
+		System.out.println("Grips");
+	}
+	final static String frameMaterial= "Steel & Iron"
+	void handalebar(){
+	
+	}
+	void wheel(){
+		
+	}
+	final static pedals(){
+		System.out.println("Pure fix platform pedals");
+	}
+} 

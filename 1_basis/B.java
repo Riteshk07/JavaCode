@@ -1,0 +1,4 @@
+// class defination
+class Student{
+    
+}
