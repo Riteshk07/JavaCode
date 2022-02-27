@@ -198,4 +198,92 @@ class B extends A {
 }
 //*******************************************************************************
 
+class A {
+	A(int x){
+		System.out.println("hello " + x);
+	}
+}
+
+class B extends A {
+    	B(){
+        	super(1);
+    	}
+}
+
+class C extends B{
+	C(){
+        	super();
+    	}
+    	public static void main(String[] args) {
+        	C x = new  C();
+        	System.out.println(x.toString());
+    	}
+}
+
+//*****************************************************************************
+
+class A{
+	final A(){}
+}
+
+class A{
+	static A(){}
+}
+
+class A{
+	abstract A(){}
+}
+
+class Student {
+	String name;
+	int age;
+
+	Student(String nm;, int ag;){
+		name = nm;
+		age = ag;
+	}
+	public static void main(String[]args){
+		// Student s1 = new Student();
+		// s1.name =  "rajkumar";
+		// s1.age = 20;
+
+		Student s1 = new Student("Rajkumar Soni",20);
+		System.out.println(s1.name);
+		System.out.println(s1.age);
+	}
+}
+
+class Student {
+	String name;
+	int age;
+
+	Student(String nm;, int ag;){
+		System.out.println(name);
+		System.out.println(age);
+	}
+	public static void main(String[]args){
+
+		Student s1 = new Student();
+	}
+	showInfo(){
+		
+	}
+}
+
+class Student {
+	String name;
+	int age;
+
+	Student(){
+		System.out.println(this);
+	}
+	public static void main(String[]args){
+
+		Student s1 = new Student();
+		
+	}
+	showInfo(){
+		
+	}
+}
 
