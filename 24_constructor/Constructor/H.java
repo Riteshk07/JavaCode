@@ -10,5 +10,6 @@ class X {
     }
 }
 
+
 // error: A() has private access in A
 //         A x = new A();

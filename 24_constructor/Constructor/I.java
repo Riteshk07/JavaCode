@@ -6,6 +6,7 @@ class X extends A {
     }
 }
 
+
 // error: constructor A in class A cannot be applied to given types;
 //         super(1);
 //         ^

@@ -9,7 +9,6 @@ class B extends A{
         super();
     }
 }
-
 // error: constructor A in class A cannot be applied to given types;
 //         super();
 //         ^

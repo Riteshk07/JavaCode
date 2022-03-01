@@ -7,6 +7,7 @@ class A {
 		System.out.println("The Bholu");
 	}
 }
+
 class B extends A{
 	boolean t;
 	char m = 'T';

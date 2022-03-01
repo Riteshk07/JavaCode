@@ -9,7 +9,6 @@ class B extends A{
 		System.out.println("Constructor B");
 	}
 }
-
 class A extends C {
 	A(){
 		System.out.println("Constructor A");

@@ -4,4 +4,5 @@ class A {
     }
 }
 
+
 // error: modifier abstract not allowed here

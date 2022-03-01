@@ -10,6 +10,7 @@ class X extends A {
     }
 }
 
+
 /**
  G.java:7: error: A() has private access in A
 class X extends A {

@@ -6,6 +6,7 @@ class Student{
 		System.out.println("suno Ji");
 	}
 }
+
 class X{
 	public static void main(String[]args){
 		new Student(3,4.5f);

@@ -3,7 +3,6 @@ class A {
         System.out.println("hello");
     }
 }
-
 class X {
     public static void main(String[] args) {
         new A();

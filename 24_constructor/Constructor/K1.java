@@ -4,4 +4,5 @@ class A {
     }
 }
 
+
 // error: modifier static not allowed here

@@ -3,7 +3,6 @@ class A {
 		System.out.println("hello " + x);
 	}
 }
-
 class B extends A {
     B(){
         super(1);

@@ -9,7 +9,6 @@ class X {
 		new A (12);
 	}
 }
-
 // error: constructor A in class A cannot be applied to given types;
 //                 new A (12);
 //                 ^

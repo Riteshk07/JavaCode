@@ -9,6 +9,7 @@ class B extends A {
 		B x = new B();
 	}
 }
+
 /*
 class B extends A {
 ^

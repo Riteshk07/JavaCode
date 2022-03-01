@@ -16,6 +16,7 @@ class Student {
 		Student s1 = new Student();
         Student s2 = new Student();
 	}
+	
 	void showInfo(){
 		System.out.println("This is method");
 	}
