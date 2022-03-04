@@ -34,6 +34,38 @@ class Student {
 		
 	}
 }
+
+//***********************************************************************
+
+class Student {
+	String name= "Ganesh";
+	byte age = 23;
+
+	Student (){
+		System.out.println(name);
+		System.out.println(age);
+	}
+	public static void main (String[]args){
+		Student s1 = new Student();
+	}
+}
+//***********************************************************************
+class Student {
+    String name = "golu";
+    int age = 12;
+
+    Student() {
+        System.out.println(this.name + " ~~~");
+        System.out.println(this.age + " ~~~");
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+
+        System.out.println(s1.name);
+        System.out.println(s1.age);
+    }
+}
 //***********************************************************************
 class Student{
 	Student(int x, float y){
@@ -58,7 +90,6 @@ class Student {
 
 	Student(){
 		
-		this.showInfo();
 		System.out.println(this.name="Ritesh");
 		System.out.println(this.age=22);
 	}
@@ -67,32 +98,109 @@ class Student {
 		Student s1 = new Student();
 		
 	}
-	void showInfo(){
-		System.out.println("This is method");
-	}
 }
 
 //***********************************************************************
-import java.util.Scanner;
+
 class Student {
 	String name;
 	int age;
-
-	Student(){
-		
-		this.showInfo();
-		System.out.println(this.name=new Scanner(System.in).next());
-		System.out.println(this.age=new Scanner(System.in).nextByte());
+	Student(String name, int age;){
+		this.name = name;
+		this.age=age;
 	}
-	public static void main(String[]args){
-
-		Student s1 = new Student();
-		
-	}
-	void showInfo(){
-		System.out.println("This is method");
+	public static void main (String[]args){
+		Student s1 = new Student("Raghav",19);
+		System.out.println(s1.name);
+		System.out.println(s1.age);
 	}
 }
+//***********************************************************************
+
+class A {
+	int i;
+	A(){
+		i++;
+	}
+	public static void main (String[]args){
+		A a1 = new A();
+		A a2 = new A();
+		A a3 = new A();
+		A a4 = new A();
+		System.out.println(a1.i);
+		System.out.println(a2.i);
+		System.out.println(a3.i);
+		System.out.println(a4.i);
+	}
+}
+//***********************************************************************
+
+class A {
+    static int i;
+
+    A(){
+        i++;
+    }
+
+    public static void main(String[] args) {
+        A a1 = new A();    
+        System.out.println(a1.i);
+        A a2 = new A();    
+        System.out.println(a2.i);
+        A a3 = new A();    
+        System.out.println(a3.i);
+        A a4 = new A();    
+        System.out.println(a4.i);
+    }
+}
+//***********************************************************************
+
+abstract class A{
+	A(){
+		System.out.println("Hello ji");
+	}
+}
+
+class X extends A{
+	public static void main(String[]args){
+		new A();	// error: A is abstract; cannot be instantiated
+                    		//    new A();
+                    		//    ^     
+		new X();
+	}
+}
+//***********************************************************************
+
+class A {
+	final int y;
+}
+// error: variable y not initialized in the default constructor
+//         final int y;
+//                   ^ 
+// 1 error
+
+to make default constructor
+
+class A {
+    final int y;
+	A(){
+		
+	}
+}
+
+// error: variable y might not have been initialized
+//         }
+//         ^
+// 1 error  
+
+to initialize variable y here
+class A {
+    final int y;
+	A(){
+		y=23;
+	}
+}
+
 
 //**************************************************************************
 
@@ -119,4 +227,357 @@ class Student {
 		System.out.println("This is method");
 	}
 }
+
+//**************************************************************************
+
+Can be change final variable x value??
+
+import java.util.Scanner;
+class A {
+	static int i=1;
+	final int x;
+	A(){
+        	System.out.println("Enter "+ i++ +" value of Final variable of x: ");
+        	x=new Scanner(System.in).nextInt();
+        	System.out.println("the value of final variable of x is: "+this.x);
+	}
+	public static void main(String[]args){
+		new A();
+        	new A();
+        	new A();
+    	}
+}
+
+//**************************************************************************
+
+We Can't intialize a final static variable x in a default constructor
+ 
+import java.util.Scanner;
+class A {
+	static int i=1;
+	final static int x;
+	A(){
+        x=45;
+	}
+	public static void main(String[]args){
+		new A();
+        
+    }
+}
+//**************************************************************************
+
+class A {
+	static final int x;
+
+	A(){
+		x=56;
+	}
+
+	public static void main (String[]args){
+		new A();
+		new A();
+	}
+}
+// error: cannot assign a value to final variable y
+
+//**************************************************************************
+
+class Shape {
+	int length;
+	int width;
+	int height;
+
+	Shape(int length){
+		this.lenght=length;
+	}
+	Shape (int length,int width){
+		this.length = length;
+		this.width = width;
+	}
+	Shape (int length, int width, int height){
+		this.length = length;
+		this.width = width;
+		this.height = height;
+	} 
+	public static void main(String[]args){
+		Shape s1 = new Shape(45);
+		Shape s2 = new shape(12,56);
+		Shape s3 = new Shape(47,98,32);
+		System.out.println(s1.length+" - "+s1.width+" - "+s1.height);
+		System.out.println(s2.length+" - "+s2.width+" - "+s2.height);
+		System.out.println(s3.length+" - "+s3.width+" - "+s3.height);
+	}
+}
+
+//**************************************************************************
+
+class Shape {
+	int length;
+	int width;
+	int height;
+
+	Shape (int length){
+		this.length= length;
+	}
+	Shape(int length,int width){
+		this.length = lenght;
+		this.width = width;
+	}
+	Shape(int length, int width, int height){
+		this(length,width);
+		this.height = height;
+	}
+	public static void main (String[]args){
+		Shape s = new Shape(12,78,56);
+	
+		System.out.println(s.lenght, s.width, s.height);	
+	}
+}
+
+//**************************************************************************
+
+class Student{
+	String name; int age; String degree; String branch;
+}
+class Teacher{
+	String name; int age; String qualification; int salary;
+}
+
+class X {
+	public static void main (String[]args){
+		Student s = new Student ();
+		s.name = "om prasad";
+		s.age = 23;
+		s.degree = "BTech";
+		s.branch = "CS";
+		System.out.println("\n");
+		
+		Teacher t = new Teacher();
+		t.name = "vigyan singh";
+		t.age = 34;
+		t.qualification = "MTech";
+		t.salary = 23000;
+
+		System.out.println ("Student info:");
+		System.out.println("Name: "+s.name);
+		System.out.println("Age: "+s.age);
+		System.out.println("Degree: "+s.degree);
+		System.out.println("Branch: "+s.branch);
+		System.out.println("\n");
+		
+		System.out.println ("Teacher info:");
+		System.out.println("Name: "+t.name);
+		System.out.println("Age: "+t.age);
+		System.out.println("Qualification: "+t.qualification);
+		System.out.println("Salary: "+t.salary);
+	}
+}
+
+//**************************************************************************
+
+
+class User {
+	String name; int age;
+}
+class Student extends User {
+	String degree; String branch;
+	Student (String name, int age, String degree, String branch){
+		this.name = name ;
+		this.age = age;
+		this.degree = degree;
+		this.branch= branch;
+	}
+}
+class Teacher extends User{
+	String qualification; int salary;
+	Teacher (String name, int age, String qualification, int salary){
+		this.name = name ;
+		this.age = age;
+		this.qualification = qualification;
+		this.salary = salary;
+    	}
+}
+
+class X {
+	public static void main (String[]args){
+		Student s = new Student ("Jatin prasad", 20,"BE","IT");
+		
+		Teacher t = new Teacher("R A Verma", 42, "PHd",120000);
+
+		System.out.println ("Student info:");
+		System.out.println("Name: "+s.name);
+		System.out.println("Age: "+s.age);
+		System.out.println("Degree: "+s.degree);
+		System.out.println("Branch: "+s.branch);
+		System.out.println("\n");
+		
+		System.out.println ("Teacher info:");
+		System.out.println("Name: "+t.name);
+		System.out.println("Age: "+t.age);
+		System.out.println("Qualification: "+t.qualification);
+		System.out.println("Salary: "+t.salary);
+	}
+}
+
+//**************************************************************************
+
+class User {
+	String name; int age;
+	User(String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+}
+class Student extends User {
+	String degree; String branch;
+	Student (String name, int age, String degree, String branch){
+		super(name,age);
+		this.degree = degree;
+		this.branch= branch;
+	}
+}
+class Teacher extends User{
+	String qualification; int salary;
+	Teacher (String name, int age, String qualification, int salary){
+		super(name, age);
+		this.qualification = qualification;
+		this.salary = salary;
+    	}
+}
+
+class X {
+	public static void main (String[]args){
+		Student s = new Student ("Vikramaditya Sharma", 19,"MCA","_");
+		
+		Teacher t = new Teacher("Gopal Prasad Shastri", 50, "PostDoc",220000);
+
+		System.out.println ("Student info:");
+		System.out.println("Name: "+s.name);
+		System.out.println("Age: "+s.age);
+		System.out.println("Degree: "+s.degree);
+		System.out.println("Branch: "+s.branch);
+		System.out.println("\n");
+		
+		System.out.println ("Teacher info:");
+		System.out.println("Name: "+t.name);
+		System.out.println("Age: "+t.age);
+		System.out.println("Qualification: "+t.qualification);
+		System.out.println("Salary: "+t.salary);
+	}
+}
+
+Is Rcursive call posssible ??
+class A {
+	A(int x ){
+	
+		this();
+	}
+	A(){
+		this(12);
+	}
+}
+
+//cyclic constructor calling
+// stack overflow
+
+
+class A {
+	A(){
+		this();
+	}
+	public static void main(String[]args){
+		A x = new A();
+	}
+}
+
+
+
+Do not allow super and this call at a one time in constructor
+class A {
+	A(){
+		this(12);
+		super();
+	}
+	A(int x){
+		
+	}
+}
+
+class A {
+	A(){
+		super();
+		this(12);
+	}
+	A(int x){
+		
+	}
+}
+
+class A {
+	int x 
+	A(){
+		super(); this(12);
+	}
+	A(int x){
+		
+	}
+}
+
+//************************************************************************
+class X {
+	X(int y){
+		System.out.println(y);
+	}
+}
+class A extends X {
+	int x = 89;
+
+	A(){
+		super(x);
+	}
+	public static void main (String[]args){
+		A a = new A();
+	}
+}
+
+
+class X {
+	X(int y){
+		System.out.println(y);
+	}
+}
+class A extends X {
+	static int x = 89;
+
+	A(){
+		super(x);
+	}
+	public static void main (String[]args){
+		A a = new A();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,114 @@
+intance initialization block 
+static/class initialization block
+
+class A {
+	{
+		System.out.prinln("Hello ji");
+	}
+	A(){
+		System.out.prinln(Hi...);
+	}
+}
+
+class X {
+	public static void main (){
+		System.out.println("A");
+		A x = new A();
+		System.out.println("B");
+	}
+}
+//**********************************************************************
+class A{
+	static {
+		System.out.println("hi");
+	}
+	A(){
+		System.out.println("Bye..");
+	}
+	public static void main(){
+		System.out.println("B");
+		A x = new A();
+		System.out.println("A");
+	}
+}
+//**********************************************************************
+class A{
+	{
+		System.out.println("C");
+	}
+	static {
+		System.out.println("K");
+	}
+	A(){
+		System.out.println("D");
+	}
+	public static void main (String[]args){
+		System.out.println("Z");
+		A x = new A();
+		System.out.println("Q");
+	}
+}
+
+//**********************************************************************
+class X{
+	{System.out.prinln("T");}
+	X(){System.out.prinln("D");}
+}
+class A extends X{
+	{System.out.prinln("K");}
+	A(){System.out.prinln("M");}
+	public static void main (String[]args){
+		System.out.println("Z");
+		A x = new A();
+		System.out.println("Q");
+}
+//**********************************************************************
+class X{
+	{System.out.prinln("T");}
+	static{System.out.prinln("F");}
+	X(){System.out.prinln("D");}
+}
+class A extends X{
+	{System.out.prinln("K");}
+	static{System.out.prinln("R");}
+	A(){System.out.prinln("M");}
+	public static void main (String[]args){
+		System.out.println("Z");
+		A x = new A();
+		System.out.println("Q");
+}
+//**********************************************************************
+
+class A{
+	{System.out.println("H");}
+	{System.out.println("Y");}
+	{System.out.println("W");}
+	A(){System.out.println("M");}
+	public static void main (String[]args){
+		System.out.println("T");
+		A x = new A();
+		System.out.println("Q");
+	}
+}
+//*********************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
