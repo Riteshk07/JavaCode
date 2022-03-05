@@ -1,0 +1,143 @@
+class A {
+	int x ;
+	public static void main (String[]args){
+		System.out.println("S");
+		A x = new A();
+		System.out.println("K");
+	}
+	A(){
+		System.out.println("Q");
+	}
+	void pro(){System.out.println("W");}
+	{System.out.println("A");}
+}
+
+class A {
+	int x ;
+	public static void main (String[]args){
+		System.out.println("S");
+		A x = new A();
+		System.out.println("K");
+	}
+	A(){
+		//super();
+		// variable x will be created and initialized in newly created object
+		// 
+		System.out.println("Q");
+	}
+	void pro(){System.out.println("W");}
+	{System.out.println("A");}
+}
+
+class A {
+	int x =90;
+	{System.out.prinln(x);}
+	publicstatic void main (String[]args){
+		new A();
+	}
+}
+
+class A {
+	
+	{System.out.prinln(x);}     // illegal forward refrence
+	int x =90;
+	publicstatic void main (String[]args){
+		new A();
+	}
+}
+
+class A {
+	
+	void pro{System.out.prinln(x);}     
+	int x =90;
+	publicstatic void main (String[]args){
+		new A();
+	}
+}
+
+you can't call x 
+class A {
+	int x =90;
+	static{System.out.prinln(x);}     // 
+	
+	publicstatic void main (String[]args){
+		new A();
+	}
+}
+
+class A {
+	static int x =90;
+	static{System.out.prinln(x);}     
+	
+	publicstatic void main (String[]args){
+		new A();
+	}
+}
+
+class A {
+	
+	static{System.out.prinln(x);}     // illegal forward refrence
+	static int x =90;
+	publicstatic void main (String[]args){
+		new A();
+	}
+}
+
+class A {
+	
+	static void pro{System.out.prinln(x);}     
+	static int x =90;
+	publicstatic void main (String[]args){
+		new A();
+	}
+}
+
+class A{
+	{System.out.prinln(x);}
+	int x ;
+}
+
+class A{
+	static {System.out.prinln(x);}
+	static int x ;
+}
+
+class A {
+	{System.out.prinln(this);}
+	A(){System.out.prinln(this);}
+	void pro(){System.out.prinln(this);}
+	public static void main(String[]args){
+		A x = new A();
+		System.out.prinln(x);
+		x.pro();
+	}
+}
+
+class A {
+	{System.out.prinln(super);}		// do not allow super directly
+	A(){System.out.prinln(super);}
+	void pro(){System.out.prinln(super);}
+	public static void main(String[]args){
+		A x = new A();
+		System.out.prinln(x);
+		x.pro();
+	}
+}
+
+
+class A {
+	static {Syatem.out.println(this);}
+	static void pro(){System.out.println(this);}
+	A(){
+		super(this);
+	}
+}
+
+
+
+
+
+
+
+
+
