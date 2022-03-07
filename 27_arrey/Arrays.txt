@@ -1,0 +1,156 @@
+import java.util.Scanner;
+class A{
+	int [] marksArray;
+    
+	void marks(){
+		System.out.print("How many Subject: ");
+		int len = new Scanner(System.in).nextInt();
+
+		marksArray= new int[len];
+		for(int i=0; i<len; i++){
+			System.out.print("Enter Subject "+(i+1)+" Marks: ");
+			marksArray[i]= new Scanner(System.in).nextInt();
+		}
+        	for(int i=0; i<len; i++){
+            		System.out.println(marksArray[i]);
+        	}
+        	System.out.println("Total Marks: ");
+		    		
+	}
+	public static void main(String[]args){
+		A x = new A();
+		x.marks();
+	}
+}
+//*******************************************************************************************
+
+class A{
+	static int[]x;    	\\ it is initialized by null
+	public static void main (String[]args){
+		System.out.println(x[0]);
+	}
+}
+	\\ Failure : NullPointerException
+//*******************************************************************************************
+class A{
+	public static void main (String[]args){
+		int [] x= new int[2]
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+
+		x[0]=5;
+		x[1]=12;
+
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+	}
+}
+
+//*******************************************************************************************
+
+class A{
+	public static void main (String[]args){
+		String [] x= new String[2]
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+
+		x[0]="Ritesh";
+		x[1]="Rajkumar";
+
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+	}
+}
+
+//*******************************************************************************************
+
+class A{
+	public static void main (String[]args){
+		float [] x= new float[2]
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+
+		x[0]=2.33;
+		x[1]=5.65;
+
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+	}
+}
+
+//*******************************************************************************************
+
+class A{
+	public static void main (String[]args){
+		boolean [] x= new booean[2]
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+
+		x[0]=true;
+		x[1]=false;
+
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+	}
+}
+
+class Student{
+	String name;
+	int age;
+
+	public static void main(String[]args){
+		Student [] x= new Student[2]
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+
+		x[0]=new Student("Bholu",12);;
+		x[1]=new Student("Golu",12);
+
+		System.out.println(x[0].name);
+		System.out.println(x[1]);
+	}
+	
+	Student(String name; int age;){
+		this.name = name;
+		this.age = age;
+	}
+}
+
+class Student{
+	String name;
+	int age;
+	public String toString(){
+		return name+" Age: "+age;
+	}
+	public static void main(String[]args){
+		Student s1 = new Student("Ritesh",15);
+		Student s2 = new Student("Rajkumar",15);
+	
+	Student(String name; int age;){
+		this.name = name;
+		this.age = age;
+	}
+}
+
+class A {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
