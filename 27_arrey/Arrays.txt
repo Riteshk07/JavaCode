@@ -66,12 +66,12 @@ class A{
 
 class A{
 	public static void main (String[]args){
-		float [] x= new float[2]
+		float [] x= new float[2];
 		System.out.println(x[0]);
 		System.out.println(x[1]);
 
-		x[0]=2.33;
-		x[1]=5.65;
+		x[0]=2.33f;
+		x[1]=5.65f;
 
 		System.out.println(x[0]);
 		System.out.println(x[1]);
@@ -115,36 +115,158 @@ class Student{
 		this.age = age;
 	}
 }
-
-class Student{
+//********************************************************************************
+class Student {
 	String name;
 	int age;
 	public String toString(){
 		return name+" Age: "+age;
 	}
-	public static void main(String[]args){
-		Student s1 = new Student("Ritesh",15);
-		Student s2 = new Student("Rajkumar",15);
-	
-	Student(String name; int age;){
-		this.name = name;
-		this.age = age;
+	Student(String name, int age){
+		this.name= name;
+		this.age=age;
 	}
 }
 
 class A {
-	
+	public static void main (String[]args){
+		Student [] x = new Student[2];
+
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+
+		x[0]= new Student("Ritesh",21);
+		x[1]= new Student("Rajkumar",20);
+
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+	}
+}
+//******************************************************************************************
+
+class A{
+	publc static void main (String()args){
+		String [] x = new String[3];
+		x[0]= "om";
+		x[1]= "Ram";
+		x[2]= "Mahesh";
+		for (int i=0; i<x.lenght; i++){
+			System.out.print(i);
+		}
+	}
 }
 
 
+class A{
+	publc static void main (String()args){
+		String [] x = new String[3];
+		x[0]= "om";
+		x[1]= "Ram";
+		x[2]= "Mahesh";
+		for (int i=x.length; i>=0; i--){
+			System.out.print(i);
+		}
+	}
+}
 
 
+class A{
+	publc static void main (String()args){
+		String [] x = new String[3];
+		x[0]= "om";
+		x[1]= "Ram";
+		x[2]= "Mahesh";
+		for (int i=0; i<x.lenght; i++){
+			System.out.print(x[i]);
+		}
+	}
+}
 
 
+class A{
+	publc static void main (String()args){
+		String [] x = new String[3];
+		x[0]= "om";
+		x[1]= "Ram";
+		x[2]= "Mahesh";
+		for (int i=0; i<x.lenght; i++){
+			System.out.print(x.length-i-1);
+		}
+	}
+}
 
 
+class A{
+	publc static void main (String()args){
+		int [] x = new int[]{12,78,56};
+		
+		for (int i=0; i<x.lenght; i++){
+			System.out.print(x[i]);
+		}
+	}
+}
 
 
+class A{
+	publc static void main (String()args){
+		int [] x;
+		x = new int[]{12,78,56};
+		
+		for (int i=0; i<x.lenght; i++){
+			System.out.print(x[i]);
+		}
+	}
+}
+
+
+class A{
+	publc static void main (String()args){
+		int [] x= {12,78,23,56};
+		
+		for (int i=0; i<x.lenght; i++){
+			System.out.print(x[i]);
+		}
+	}
+}
+
+
+class A{
+	publc static void main (String()args){
+		int [] x;
+		x= {12,78,23,56};
+		
+		for (int i=0; i<x.lenght; i++){
+			System.out.print(x[i]);
+		}
+	}
+}
+
+
+class A{
+	publc static void main (String()args){
+		int [] x;
+		
+		if 12<15{
+			x = new int[] {12,78,23,56};
+		}
+		else{x = new int[] {12,78,23,56};}
+		
+		for (int i=0; i<x.lenght; i++){
+			System.out.println(x[i]);
+		}
+	}
+}
+
+
+class A{
+	publc static void main (String()args){
+		String [] x= {"A","B","C","D"};
+		
+		for (String st : x){
+			System.out.println(st);
+		}
+	}
+}
 
 
 
