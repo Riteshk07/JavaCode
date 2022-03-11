@@ -1,0 +1,84 @@
+class A {
+	public static void main(String[]args){
+		Animal [] x = new Dog[];
+		System.out.println();
+	}
+}
+
+class Animal {
+	
+} 
+class Dog {
+	
+}
+
+class A {
+	public static void main (String[]args){
+		Animal [] x = new Dog [];
+		x[0]= new Dog ();
+		x [1] = new Cat ();
+	}
+} 
+class Animal {}
+class Cat extends Animal{}
+class Dog extends Animal{}
+
+
+class A {
+	public staic void main (String[]args){
+		int [] x = new int [0];
+
+		System.out.println(x[0]);
+	}
+}
+
+class A {
+	public static void main (String[]args){
+		int [] x = new int [-1];
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		int [] x = new int [2];
+
+		System.out.println(x[-1]);
+	}
+}
+
+//**************************************************************************************
+
+class A{
+	public static void main (String[]args){
+		
+	}
+}
+
+
+2D array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
