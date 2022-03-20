@@ -1,0 +1,359 @@
+class A {
+	public static void main (String []args){
+		String x = "mohan";
+
+	// an object of class String will be created to handle the String constant value 
+	// refrence code of such String object will be stored in String-Class-type refrence variable x.. 
+
+		System.out.println(x);
+	}
+}
+
+class A {
+	public static void main (String []args){
+		String x = new String ("kartikeyen");
+		String y = new String ();
+		System.out.println(x);
+		System.out.println(y);
+	}
+}
+
+class A {
+	public static void main (String[]args){
+		String x = "om";
+		String y = "om";
+		String z = "om";
+	}
+}
+
+class A {
+	public static void main (String []args ){
+		String x = new String ("om");
+		String y = new String ("om");
+		String z = new String ("om");
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}
+
+class A {
+	public static void main (String []args){
+		String x = new String ("om");
+		String y = "om";
+
+		System.out.println (x);
+		System.out.println (y);
+	}
+}
+
+class A{
+	public static void main (String []args){
+		//case 2 
+		String a = "om";
+		String b = "om";
+		System.out.println(a==b);		
+
+		// case 1 
+		int x = 2;
+		int y = 2;
+		System.out.println(x==y);
+	}
+}
+
+
+class A {
+	public static void main(String []args){
+		String x = new String ("om");
+		String y = "om";
+
+		System.out.println(x==y);
+	}
+}
+
+
+class A {
+	public static void main(String []args){
+		String x = new String ("om");
+		String y = new String ("om");
+
+		System.out.println(x==y);
+	}
+}
+//*******************************************************************
+class A {
+	public static void main (String[]args){
+		String x  = new String ("om");
+		String y = "om";
+
+		System.out.println(x==y);
+		System.out.println(x.equals(y));
+	}
+}
+
+class Student {
+	String name;
+	int age;
+
+	Student (String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+
+	public static void main (String[]args){
+		Student  s1 = new Student ("om",21);
+		Student  s2 = new Student ("om",21);
+
+		System.out.println(s1==s2);
+		System.out.println(s1.equals(s2));
+	}
+}
+
+class Student {
+	String name;
+	int age;
+
+	Student (String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+
+	public boolean equals (Object obj){
+		Student m = this ;
+		Student n = (Student)obj;
+		return m.name.equals(n.name);
+	}
+	public static void main (String[]args){
+		Student  s1 = new Student ("om",21);
+		Student  s2 = new Student ("om",21);
+
+		System.out.println(s1==s2);
+		System.out.println(s1.equals(s2));
+	}
+}
+
+class A {
+    public static void main(String[] args) {
+        // String x = new String();
+        String x = "";
+        
+        System.out.println(">"+x+"<");
+    }
+}
+
+class Employee {
+    String name;
+    int salary;
+
+    Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public static void main(String[] args) {
+        Employee e1 = new Employee("ganesh", 34);
+        Employee e2 = new Employee("ganesh", 34);
+
+        System.out.println(e1 == e2);
+        System.out.println(e1.equals(e2));
+    }
+}
+
+
+class Employee {
+    String name;
+    int salary;
+
+    Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public boolean equals(Object x) {
+        
+        Employee m = this;
+        Employee n = (Employee)x;
+        
+        return m.salary == n.salary;
+    }
+
+    public static void main(String[] args) {
+        Employee e1 = new Employee("ganesh", 34000);
+        Employee e2 = new Employee("ganesh", 34000);
+
+        System.out.println(e1 == e2);
+        System.out.println(e1.equals(e2));
+    }
+}
+
+class Employee {
+    String name;
+    int salary;
+
+    Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public boolean equals(Object x) {
+        
+        Employee m = this;
+        Employee n = (Employee)x;
+        
+        return m.name.equals(n.name) || m.salary == n.salary;
+    }
+
+    public static void main(String[] args) {
+        Employee e1 = new Employee("ganesh", 34000);
+        
+        Employee e2 = new Employee("ganesh", 34000);
+
+        System.out.println(e1 == e2);
+        System.out.println(e1.equals(e2));
+    }
+}
+
+import java.io.Console;
+
+class A {
+    public static void main(String[] args) {
+        Console x = System.console();
+
+        System.out.print("First Name: ");
+        String firstName = x.readLine();
+
+        System.out.print("Last Name: ");
+        String lastName = x.readLine();
+
+        System.out.println(firstName + " " + lastName);
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        String x = "";
+        System.out.println(x.length());
+        System.out.println(x.isEmpty());
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        String x = "ram";
+
+        System.out.println(x.charAt(0));
+        System.out.println(x.charAt(1));
+        System.out.println(x.charAt(2));
+    }
+}
+
+
+//*************************************************************************
+
+
+class A{
+	public static void main (String []args){
+		String x = "ram";
+
+		System.out.println(x.charAt(3));
+	}
+}
+
+
+class A{
+	public static void main (String []args){
+		String  x = "om";
+		String y = "kumar";
+		String z = x.concat(y);
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}
+
+class A{
+	public static void main (String []args){
+		String  x = "om";
+		String y = "kumar";
+		String z = x.concat(y);
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+
+		System.out.println(z==y);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		String city = "jabalpur";
+
+		System.out.println(city.endsWith("pur"));
+		System.out.println(city.endsWith("dham"));
+
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		String name = "vikramaditiya";
+
+		System.out.println(name.startsWith("vikram"));
+		System.out.println(name.startsWith("vikrant"));
+
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		String s = "ramanna";
+
+		System.out.println(s.indexOf('a'));
+		System.out.println(s.indexOf('m'));
+		System.out.println(s.indexOf('x'));
+	}
+}
+
+
+class A {
+	public static void main (String[]args){
+		String s = "prasad";
+
+		System.out.println(s.indexOf(97));
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		String s= "prasd is a good bhai";
+
+		System.out.println(s.indexOf("good"));
+		System.out.println(s.indexOf("Good"));
+	}
+}
+
+class A {
+	public static void main(String[]args){
+		String s ="ramanna";
+		System.out.println(s.indexOf('a'));
+		System.out.println(s.indexOf('a',2));
+		System.out.println(s.indexOf('a',4));
+		System.out.println(s.indexOf('a',12));
+	}
+}
+
+class A {
+	public static void main(String[]args){
+		String s = "ramanna";
+
+		int n = -1;
+		while((n=s.indexOf('a',n+1)) != -1){
+			System.out.print(n+" ");
+		}
+	}
+}
