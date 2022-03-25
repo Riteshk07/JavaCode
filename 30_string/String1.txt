@@ -1,0 +1,182 @@
+class A {
+	public static void main (String[]args){
+		String x = "Mohan is my friend";
+
+		String []y = x.split(" ");
+		String []y = x.split(" ", 3);
+		for (String t : y){
+			System.out.println(t);
+		}
+	}
+}
+
+class A {
+	public static void main(String[]args){
+		System.out.println("mohan".compareTo("mohan"));
+		System.out.println("mohan".compareTo("mihan"));
+		System.out.println("mihan".compareTo("mohan"));
+	}
+}
+
+class A {
+	public static void main (String[]args){
+		System.out.println("om".compareTo("oma"));
+		System.out.println("oma".compareTo("om"));
+	}
+}
+
+class A{
+	public static void main (String []args){
+		System.out.println("mohan is my friend".contains("ien"));
+		System.out.println("mohan is my friend".contains("my"));
+		System.out.println("mohan is my friend".contains("my friend"));
+	}
+}
+
+class A {
+	public static void main (String []args){
+		System.out.println("mohan".concat(" kumar"));
+		System.out.println("mohan".concat(" kumar"," vishwas"));
+	}
+}
+
+class A {
+    public static void main(String[] args) {
+        System.out.println("mohan".concat("kumar"));
+
+        // System.out.println("mohan".concat("kumar", "vishwas"));
+
+        System.out.println("mohan"+" "+"kumar"+" "+"vishwas"+" "+"ji");
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        System.out.println("mohan".concat("kumar"));
+
+        // System.out.println("mohan".concat("kumar", "vishwas"));
+
+        System.out.println("mohan"+" "+"kumar"+" "+"vishwas"+" "+"ji");
+        
+        System.out.println("mohan".concat(" ").concat("kumar").concat(" ").concat("vishwas"));
+    }
+}
+
+
+class A {
+    public static void main(String[] args) {
+        String x = "mohan is my friend";
+
+        String y = x.substring(5,12).trim().toUpperCase().replace("MY","YOUR");
+
+        System.out.println(x);
+        System.out.println(y);
+    }
+}
+
+
+//String class is final
+
+class A extends String {
+
+}
+
+//error: cannot inherit from final String
+
+
+
+class A {
+    public static void main(String[] args) {
+        //Case 3:
+        String x = "mohan is my friend";
+        String y = x.substring(5,12);    
+        
+        //Case 2:
+        /*
+        String x = "ramanna";
+        String y = x.replace("a","o");
+        */
+
+        //Case 1:
+        /*
+        String x = "mohan";
+        String y = x.toUpperCase();
+        */
+        
+        System.out.println(x==y);  //false
+        System.out.println(x);     
+        System.out.println(y);
+
+
+        //String objects are immutable...
+    }
+}
+
+
+
+class A {
+    public static void main(String[] args) {
+        String x = "mohan";
+        System.out.println(x);
+        x = "om";        
+        System.out.println(x);   
+        //reference variable is still modifiable
+        //here new string object with value om is created 
+        //original string object with value mohan is still there inside the string constant pool
+        //along with the string object containing om       
+    }
+}
+
+
+
+class A {
+    public static void main(String[] args) {
+        String x = "mohan";
+        String y = x;
+
+        System.out.println(x);
+        x = "om";        
+        System.out.println(x);
+        String z = "mohan";
+        
+        System.out.println(y==z);
+    }
+}
+
+
+class A{
+	public static void main (String[]args){
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
