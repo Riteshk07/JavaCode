@@ -1,0 +1,18 @@
+class A{
+	int z;
+	
+	public static void main (String []args){
+		A x = new A();
+		x.z = 99;
+
+		System.out.println(x.z);
+		System.out.println(pro(x));
+		System.out.println(x.z);
+	}
+	static int pro(A t){
+		t.z +=1;
+		return t.z;
+	}
+}
+
+ 

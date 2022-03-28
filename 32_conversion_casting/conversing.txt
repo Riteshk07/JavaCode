@@ -1,0 +1,163 @@
+class A {
+	public static void main (String[]args){
+		int x = 20; // 20 is an int constant 
+
+		char y = 'A';  // 'A' is a char constant
+
+		float z = 2.3f;  // 2.3f is a float constant 
+
+		//  the type of the value and type of the variable is 
+		// same thus no conversion required 
+	}
+}
+
+class A{
+	public static void main (String [] args){
+		int x = 'A';
+		// int <--char ---- type missmatched thus conversion required 
+		// widening/ narrowing conversion? ----> widenning
+		//int(-2147483648 to 2147483647) vs. char(0-65535)
+        	//Auto/Forced conversion? ---> Auto(because widenning conversion and no risk)
+
+		System.out.println(x);		
+	}
+}
+
+
+class A{
+	public static void main (String [] args){
+		int x = 2.3f;
+		// int <--float ---- type missmatched thus conversion required 
+		// convertible--> yes
+		// widening/ narrowing conversion? ----> narrowing
+		//int(-2147483648 to 2147483647) vs. float(3.4e−038 to 3.4e+038)
+        	//Auto/Forced conversion? ---> forced(because narrowing conversion and there is risk associated...)
+        	//forced conversion must be done by the developer ....
+        	//how? using type-cast (<type>) oerator...
+
+		System.out.println(x);
+		
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		int x = (int)2.3f;
+		// int <--float ---- type missmatched thus conversion required 
+		// convertible--> yes
+		// widening/ narrowing conversion? ----> narrowing
+		//int(-2147483648 to 2147483647) vs. float(3.4e−038 to 3.4e+038)
+        	//Auto/Forced conversion? ---> forced(because narrowing conversion and there is risk associated...)
+        	//forced conversion must be done by the developer ....
+        	//how? using type-cast (<type>) oerator...
+
+		System.out.println(x);	
+	}
+}
+
+class A{
+	public static void main(String[]args){
+		boolean x = 0;
+		// boolean <-- int --- type mismatched thus conversion required 
+		//  convertible? --> no
+		System.out.println(x);
+	} 
+}
+
+class A{
+	public static void main (String[]args){
+		byte b = 20;
+		short s = 200;
+		char c = 2000;
+
+		System.out.println(b);
+		System.out.println(s);
+		System.out.println(c);
+
+		// type casting exempted because the value assingned using assingnment operator
+		// and the value is constant value with in range of the variable type  
+	}
+}
+
+class A{
+	public static void main (String []args ){
+		int x = 1;
+
+		byte b = x;
+		short s = x;
+		char c = x;
+
+		System.out.println(b);
+		System.out.println(s);
+		System.out.println(c);
+
+		// type casting exempted because the value assingned using assingnment operator
+		// and the value is constant value with in range of the variable type  
+
+	}
+//error: incompatible types: possible lossy conversion from int to byte/short/char
+}
+
+class A{
+	public static void main (String []args){
+				int x = 1;
+
+		byte b = (byte)x;
+		short s = (short)x;
+		char c = (char)x;
+
+		System.out.println(b);
+		System.out.println(s);
+		System.out.println(c);
+
+		// type casting exempted because the value assingned using assingnment operator
+		// and the value is constant value with in range of the variable type  
+		
+	}
+}
+
+
+class A{
+	public static void main (String [] args){
+
+		byte b = 128;
+		short s = 32768;
+		char c = -1;
+
+		System.out.println(b);
+		System.out.println(s);
+		System.out.println(c);
+
+		// type casting exempted because the value assingned using assingnment operator
+		// and the value is constant value with in range of the variable type  
+
+	}
+//error: incompatible types: possible lossy conversion from int to byte/short/char
+}
+
+
+class A{
+	public static void main (String[]args){
+		byte b = (byte)128;
+		short = (short)32768;
+		char = (char)-1;
+
+		System.out.println(b);
+		System.out.println(s);
+		System.out.println(c);
+
+		// type casting exempted because the value assingned using assingnment operator
+		// and the value is constant value with in range of the variable type  
+	}
+}
+
+class A {
+	public static void main (String []args){
+		byte x = 127;
+		byte x = (byte)128;
+
+		byte x = (byte)-134;
+
+		System.out.println(x);
+	}
+}
