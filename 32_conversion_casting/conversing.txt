@@ -1,4 +1,8 @@
 class A {
+
+
+
+
 	public static void main (String[]args){
 		int x = 20; // 20 is an int constant 
 
@@ -161,3 +165,321 @@ class A {
 		System.out.println(x);
 	}
 }
+
+
+short -32768 to 32767
+class A{
+	public static void main (Stirng [] args){
+		// short s = 32767;
+		short s = 32770;
+		short s = (short)32770;
+		short s = (short)-32772;
+		System.out.println(s);
+	}
+}
+
+class A{
+	public static void main (String []args){
+		char x =65535;
+		char x =65540;
+		char x =(char)65540;
+		char x =(char)-5;
+
+		System.out.println((int)x)
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		int a = 2;
+		pro(a);
+		pro((byte)a);
+		pro((byte)3);
+	}
+	static void pro(byte x){
+		System.out.println(x);
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		byte = pro();
+	}
+	static byte pro(){
+		int a = 2;
+		return a;
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		byte = pro();
+	}
+	static byte pro(){
+		int a = 4;
+		return (byte)a;
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		byte = pro();
+	}
+	static byte pro(){
+		int a = 2;
+		return 2;
+	}
+}
+
+class A{
+	public static void main (String []args){
+		byte  a= 2;
+		char x = a;
+
+		char x = (char)a;
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		char x = 1;
+
+		byte y = x;
+
+		byte y = (byte)y;
+	}
+}
+
+
+class A{
+	public static void main(String[]args){
+		short a = 2;
+
+		char y = a;
+		char y = (char)a;
+	}
+}
+
+
+class A{
+	public static void main(String[]args){
+
+		char y = 3;
+		short t =y;
+		short t = (short)y;
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		byte a = 56;
+		short b = a;
+		System.out.println(b);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		byte a = 1;
+		byte b = 1;
+
+		short x = a+b;		
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		byte a = 1;
+		byte b = 1;
+
+		short x = (short)(a+b);		
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		char a = 1;
+		byte b = 1;
+
+		short x = a+b;		
+	}
+}
+//***************************************************************
+classA{
+	public static void main (String[]args){
+		double x = 'A';
+		
+	}
+}
+//**************************************************************
+class A{
+	public static void main (String[]args){
+		LivingBeing x = new BDog();
+		System.out.println(x);
+	}
+}
+
+class Animal extends LivingBeing{
+	
+}
+
+livingBeing{
+	
+}
+class Cat extends Animal{
+
+}
+class Dog extends Animal{
+
+} 
+class Cow extends Animal{
+
+}
+class Bdog  extends Animal{
+
+}
+//**************************************************************
+class A{
+	public static void main (String[]args){
+		LivingBeing x = new BDog();
+		BDog y = (BDog)x;
+		System.out.println(y);
+	}
+}
+
+class Animal extends LivingBeing{
+	
+}
+
+livingBeing{
+	
+}
+class Cat extends Animal{
+
+}
+class Dog extends Animal{
+
+} 
+class Cow extends Animal{
+
+}
+class Bdog  extends Animal{
+	void pro(){
+		System.out.println("this is BDog");
+	}
+}
+
+//********************************************************
+class A{
+	void pro(){
+		System.out.println("pro In A");
+	}
+}
+
+class B{
+	void info(){
+		System.out.println("info in B");
+	}
+}
+class X{
+	public static void main (String[]args){
+		A x = new B();
+		System.out.println(x.toString());
+
+		x.pro();
+		x.info();
+	}
+}
+
+
+class A{
+	void pro(){
+		System.out.println("pro In A");
+	}
+}
+
+class B{
+	void info(){
+		System.out.println("info in B");
+	}
+}
+class X{
+	public static void main (String[]args){
+		A x = new B();
+		System.out.println(x.toString());
+
+		x.pro();
+		x.info();
+
+		B t = x;
+		t.info();
+	}
+}
+
+
+class A{
+	void pro(){
+		System.out.println("pro In A");
+	}
+}
+
+class B{
+	void info(){
+		System.out.println("info in B");
+	}
+}
+class X{
+	public static void main (String[]args){
+		A x = new B();
+		System.out.println(x.toString());
+
+		x.pro();
+		x.info();
+
+		B t = (B)x;
+		t.info();
+	}
+}
+
+
+class Animal{
+
+}
+class Dog extends Animal{
+
+}
+class Cat extends Animal{
+
+}
+class X {
+	public static void main (String []args){
+		Animal x = new Cat();
+		Dog y = x;
+	}
+}
+
+
+class Animal{
+
+}
+class Dog extends Animal{
+
+}
+class Cat extends Animal{
+
+}
+class X {
+	public static void main (String []args){
+		Animal x = new Cat();
+		Dog y = (Dog)x; 	// ClassCastException in RUNTIME
+	}
+}
+
+class A{
+	public static void main(String[]args)
+}
+
