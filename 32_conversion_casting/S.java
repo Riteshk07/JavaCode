@@ -2,8 +2,13 @@ class A{
 	public static void main (String[]args){
 		LivingBeing x = new BDog();
 		System.out.println(x);
-		BDog y = x;		// error: incompatible types: LivingBeing cannot be converted to BDog
-		y.pro();
+		
+		x.pro();
+        /*error: cannot find symbol
+                x.pro();
+                 ^
+        symbol:   method pro()
+        location: variable x of type LivingBeing*/
 	}
 }
 class LivingBeing{

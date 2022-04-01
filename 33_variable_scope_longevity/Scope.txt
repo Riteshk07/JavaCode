@@ -1,0 +1,223 @@
+class A{
+	void pro(){
+		int a =2;
+	}
+	pulic static void main (String[]args){
+		
+	}
+}
+
+class A{
+	public static void main(){
+		int x = 2;
+	}
+	void pro(){
+		System.out.println(x);
+	}
+}
+
+class A{
+	void pro(){
+		int x = 2;
+		if (12<13){
+			for(int i = 0; i<5; i++){
+				while(i<x){
+					System.out.println(x);
+				}
+				System.out.println(x);
+			}
+			System.out.println(x);
+		}
+		System.out.println(x);
+	}
+}
+
+
+class A{
+	void pro(){
+		if (12<13){
+			int y = 2;
+			for(int i = 0; i<5; i++){
+				System.out.println(y);
+			}
+			System.out.println(y);
+		}
+		System.out.println(y);
+	}
+}
+
+
+class A{
+	void pro(){
+		int y =5;
+		if (12<13){
+			for(int i =0; i<5; i++){
+				int x = 9;
+			}
+		}
+	}
+}
+
+
+
+class A{
+	int x = 2;
+	void pro(){
+		if (12<13){
+			System.out.println(x);
+			for (int i=0; i<5; i++){
+				System.out.println(x);
+			}
+		}
+	}
+	void info(){
+		System.out.println(x);
+	}
+	static void abc(){
+		System.out.println(x);
+	}
+}
+
+class A{
+	int x=2;
+	
+}
+
+class B extends A{
+	{
+	
+	}
+	B(){
+
+	}
+	void pro(){
+		if (){
+			while(){
+
+			}
+		}
+	}
+	static void info(){
+		System.out.println(x);
+	}
+}
+
+class A{
+	void info(){
+		int x =2;
+		if(12<13){
+			int x = 5;
+		}
+	}
+}
+
+
+class A{
+	void info(){
+		
+		if(12<13){
+			int x = 5;
+		}
+		int x =11;
+	}
+}
+
+
+claas A {
+	void pro(){
+		if (){
+			int x = 1;
+		}
+		if (){
+			int x = 5;
+		}
+	}
+}
+
+class A{
+	int x =10;
+
+}
+class B extends A{
+	int x =20;
+}
+
+
+class A{
+	{
+		System.out.println(x);
+	}
+	int x = 10;
+}
+
+class A{
+	int x = 10;
+	{
+		System.out.println(x);
+	}
+
+}
+
+
+class A{
+	static int  a = 1;
+	static {
+		System.out.println(a);
+	}
+}
+
+
+class A{
+	static {
+		System.out.println(a);
+	}
+	static int  a = 1;
+}
+
+
+class A extends X {
+	int y =45;
+	void pro(){
+		int y 
+	}
+}
+class X {
+	int y = 98;
+}
+
+
+
+class A{
+	public static void main(String[]args){
+		System.out.println("A");
+		//local code block... helps to create block level scope
+		{
+			System.out.println("B");	
+		}
+		System.out.println("C");
+	}
+}
+
+
+class A{
+	public static void main(String[]args){
+		System.out.println("A");
+		//local code block... helps to create block level scope
+		{
+			int y =90;	// block scoped variable not accessible outside block
+			System.out.println(y);	
+		}
+		System.out.println("C");
+		System.out.println(y);
+	}
+}
+
+
+class A{
+	public static void main(String[]args){
+		int x = 63;
+	}
+	static void pro(){
+		System.out.println(x);
+	}
+}
