@@ -1,0 +1,292 @@
+class A{
+	public static void main (String[]args){
+		Boolean x = Boolean.valueOf(true);
+		Boolean x = Boolean.valueOf(false);
+		Boolean x = Boolean.valueOf(0);
+		
+		System.out.println(x);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		Boolean x = Boolean.valueOf("true");
+		Boolean x = Boolean.valueOf("trUe");
+		Boolean x = Boolean.valueOf("mohan");
+		Boolean x = Boolean.valueOf("false");
+		
+		System.out.println(x);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		Character x = Character.valueOf('A');
+		Character x = Character.valueOf('a');
+		Character x = Character.valueOf('1');
+
+		Syetem.out.println(x);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		byte b = 23;
+
+		Byte x = Byte.valueOf(b);
+
+		System.out.println(x);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		// byte b = 23;
+
+		Byte x = Byte.valueOf(b);
+		Byte x = Byte.valueOf(2);
+		Byte x = Byte.valueOf((byte)2);
+
+		System.out.println(x);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		// byte b = 23;
+
+		Byte x = Byte.valueOf("om");
+		Byte x = Byte.valueOf("12");
+		Byte x = Byte.valueOf("128");	// numberFormateException: 
+
+		System.out.println(x);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		// byte b = 23;
+
+		Byte x = Byte.valueOf("111");
+		Byte x = Byte.valueOf("111",2);
+		Byte x = Byte.valueOf("57",8);
+		Byte x = Byte.valueOf("58",8);
+
+		System.out.println(x);
+	}
+}
+
+
+
+class A{
+	public static void main (String[]args){
+		// short b = 23;
+
+		Short x = Short.valueOf(b);
+		Short x = Short.valueOf(2);
+		Short x = Short.valueOf((short)2);
+
+		System.out.println(x);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+
+
+		Short x = Short.valueOf("ram");
+		Short x = Short.valueOf("7896");
+		Short x = Short.valueOf("32768");
+
+		System.out.println(x);
+	}
+}
+
+class A{
+	public static void main (String[]args){
+
+
+		Short x = Short.valueOf("111");
+		Short x = Short.valueOf("111",2);
+		Short x = Short.valueOf("58",8 );
+
+		System.out.println(x);
+	}
+}
+
+//****************************************************************
+
+
+class A{
+	public static void main(String[]args){
+		Boolean x = true;
+		Boolean y = false;
+		Boolean z = "false";
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	} 
+}
+
+class A{
+	public static void main (String[]args){
+		Character x = 'A';
+		Character y = '\b';
+		Character z = '\n';
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		Byte x = 45 ;
+		Byte y = "127";
+		Byte z = 128;
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		Integer x = 45 ;
+		Integer y = "127";
+		Integer z = 2147483648;
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		Long x = 45 ;
+		Long y = "127";
+		Long z = 9223372036854775807;
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		Float x = 45.34f ;
+		Float y = "127.1454f";
+		Float z = 9.3e3f;
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		Double x = 45.34 ;
+		Double y = "127.1454";
+		Double z = 9.3e5;
+
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}
+
+
+class A{
+	public static void main(String[]args){
+		byte x = 2;
+
+		short a = x;
+		Short a = x;
+		Short a = (short)x;
+
+		int b = x;
+		Integer b = x;
+		Integer b = (int)x;
+
+		char c=x;
+		Charater c= x;
+		Charater c= (char)x;
+
+		long d=x;
+		Long d = x;
+		Long d = (long)x;
+
+		float e = x;
+		Float e = x ;
+		Float e = (float)x ;
+
+		double f =x;
+		Double f =x;
+		Double f =(double)x;
+	}
+}
+
+//*******************************************************************************
+
+class A{
+	public static void main (String[]args){
+		Integer x = 20;
+		
+		int a = x;   // this is unboxing
+	}
+}
+
+
+class A{
+	public static void main (String[]args){
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

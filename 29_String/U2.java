@@ -4,7 +4,7 @@ class A {
 
         int n = -1;
 
-        while((n = s.indexOf("is", n+1)) != -1) {
+        while((n = s.indexOf("i", n+1)) != -1) {
             System.out.println(n);
         }
     }

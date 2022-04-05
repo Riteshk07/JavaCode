@@ -8,6 +8,7 @@ class A {
                 if (x[i]==x[j]){
                     count+=1;
                 }
+                
             }
             System.out.println(x[i]+" --> "+count);
             count=0;
