@@ -1,0 +1,62 @@
+class A {
+	public static void main(String[]args) throws IOException ClassNotFoundException{
+		
+	}
+}
+
+class A{
+	public static void main(String[]args){
+		try{
+			int[] x ={1,2,3};
+			System.out.println(x[3]);
+		}catch(IndexOutOfBoundsException){
+		}catch(ArrayIndexOutOfBoundsException){}
+	}
+}
+
+
+class A{
+	public static void main(String[]args){
+		try{
+			int[] x ={1,2,3};
+			System.out.println(x[3]);
+		}catch(ArrayIndexOutOfBoundsException){
+			System.out.println();
+		}catch(IndexOutOfBoundsException){}
+	}
+}
+
+
+
+import java.io.IOException;
+import java.io.FileNotFoundException;
+
+class A{
+	public staic void main (String[]args){
+		try{
+			if(12<13){
+				throw new FileNotFoundException();
+			}else{throw new IOException();}
+		}catch(FileNotFoundException e){
+			System.out.println("FNFE");
+		}catch(IOException e){
+			System.out.println("IOE");
+		}
+	}
+}
+
+
+
+class A{
+	public static void main(String[]args){
+		pro();
+	}
+
+	static void pro(){
+		info();	
+	}
+	static void info(){
+		System.out.println("C");
+		Class.forName();
+	}
+}

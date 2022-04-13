@@ -1,5 +1,352 @@
 class A{
 	public static void main (String[]args){
+		System.out.println("A");
+		try{
+			int x = 12/0;
+			System.out.println(x);
+		}catch(ArithmaticException a){
+			System.out.println(a);
+		}
+		System.out.println("B");
+	}
+}
+
+
+class A{
+	static String x;
+	public static void main (String[]args){
+		System.out.println("A");
+		try{
+			System.out.println("B");
+			System.out.println(x.length());
+			System.out.println("C");
+		}catch(ArithmaticException a){
+			System.out.println();
+		}
+		System.out.println("D");
+	}
+}
+
+class A{
+	public static void main (String[]args){
+		System.out.println("A");
+		try{
+			int x = Integer.parseInt(args[0]);
+			System.out.println(x);
+		}catch(ArrayIndexOutOfBoundsException a){
+			System.out.println();
+		}catch(NumberFormatException b){
+			System.out.println();
+		}catch(NullPointerException c){
+			System.out.println();
+		}catch(ArithmaticException d){
+			System.out.println();
+		}
+		System.out.println("B");
+	}
+}
+
+
+
+class A{
+	public static void main (String[]args){
+		System.out.println(1)
+		System.out.println(2)
+		System.out.println(3)
+		try{
+			int y= 12/0
+		}catch
+		
+		System.out.println(4)
+		System.out.println(5)
+		System.out.println(6)
+		System.out.println(7)
+		System.out.println(8)
+		System.out.println(9)
+		System.out.println(10)
+	} 
+}
+
+class A {
+	public static void main (String[]args){
+		try{
+			try{
+				
+			}catch(NumberFormatException){
+
+			}finally{}
+		}catch(NumberFormatException){
+
+		}finally{}
+	}
+}
+
+import java.io.File;
+import java.io.IOException;
+class A{
+	public static void main(String[]args)throws IOException{
 		
 	}
 }
+
+
+
+class A{
+	public static void main(String[]args){
+		Class kls = Class.forName("java.lang.String"); 
+	}
+}
+
+
+
+class A{
+	public static void main(String[]args){
+		try{
+			Class kls = Class.forName("java.lang.String"); 
+		}catch(ClassNotFoundException e){
+			System.out.println("CnFE");
+		}
+	}
+}
+
+
+
+class A{
+	public static void main(String[]args)throws ClassNotFoundException{
+		Class kls = Class.forName("java.lang.String"); 
+	}
+}
+//************************************************************************************************
+
+
+class A {
+	public static void main (String []args){
+		File file = new File("a.txt");
+
+		file.createNewFile();
+	}
+}
+
+
+import java.io.File;
+import java.io.IOException;
+class A {
+	public static void main (String[]args){
+		File file = new File("a.txt");
+
+		try{
+			file.createNewFile();
+		}catch(){
+			System.out.println("IO Exception");
+		}
+	}
+}
+
+
+
+import java.io.File;
+import java.io.IOException;
+
+class A{
+	public static void main (String []args) throws IOException{
+		File file= new File("Sonu.txt");
+
+		file.createNewFile();
+	}
+}
+
+
+
+class A{
+	public static void main (String []args){
+		Class kls = Class.forName("java.lang.String");
+	}
+}
+
+
+
+class A{
+	public static void main (String []args){
+		try{
+			Class kls = Class.forName("java.lang.String");
+		}catch (ClassNotFoundExceptionn e){
+			System.out.println("CNFE");
+		}
+	}
+}
+
+
+
+class A{
+	public static void main (String []args) trows ClassNotFoundException{
+		Class kls = Class.forName("java.lang.String");
+	}
+}
+
+
+
+class A{
+	public static void main (String []args) throws ClassNOtFoundException{
+		Class kls = Class.forName("a1.a2.a3.W");
+
+		System.out.println("Hello JI");
+	}
+}
+
+
+
+class A{
+	public static vois main (String[]args){
+		int u = 45/0;	// Unchecked exception ArithmeticException generating code...
+		
+		// compiler not going to check whether you are handling the exception or declaring it...
+	}
+}
+
+
+
+import java.io.IOException;
+class A{
+	public static void main (String []args){
+		try{
+
+		}catch(IOException e){}
+	}
+}
+
+
+
+class A{
+	public static void main (String []args){
+		try{
+
+		}catch(ClassNotFoundException e){}
+	}
+}
+
+
+class A {
+    public static void main(String[] args) {
+        try {
+
+        } catch(ArrayIndexOutOfBoundsException e) {
+            // we can create a catch block for an Unchecked Exception
+            //even though the corresponding try block does not generate any such exception...
+        }
+    }
+}
+
+
+
+class A {
+    public static void main(String[] args) {
+        try {
+
+        } catch(NumberFormatException e) {
+
+        }
+    }
+}
+
+
+ 
+
+class A {
+    public static void main(String[] args) {
+        try {
+            
+        } catch(Throwable e) {
+
+        }
+    }
+}
+
+
+
+import java.io.IOError;
+
+class A {
+    public static void main(String[] args) {
+        try {
+            
+        } catch(IOError e) {
+
+        }
+    }
+}
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
