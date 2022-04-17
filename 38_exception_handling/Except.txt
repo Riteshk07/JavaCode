@@ -60,3 +60,120 @@ class A{
 		Class.forName();
 	}
 }
+
+
+
+class A extends RuntimeException{
+	public static void main(String []args){
+		throw new A();	// trying to throw an unchecked Exception
+	}
+}
+
+
+
+class A extends Exception{
+	public static void main(String []args){
+		throw new A();	// trying to throw an checked Exception
+	}
+}
+
+
+class A extends Exception{
+	public static void main(String []args){
+		// case4
+		try{
+			throw new IOException();
+		}catch(IOException){}
+
+
+		// case3
+		try{
+			throw new IOException();
+		}catch(IOException){}
+
+		// case2
+		try{
+			throw new IOException();
+		}catch(IOException){}
+
+		// case1
+		try{}catch(ArithmaticException){}
+	}
+}
+
+
+
+class A{
+	public static void main(String []args){
+		try{
+			int y = 12/0;
+		}catch(ArithmeticException e){
+			System.out.println(e);
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+}
+
+
+class A{
+	public static void main(String []args){
+		if (args.length==0){
+			throw new  MissingCommandLineArgumentException();
+		}
+	}
+}
+class MissingCommandLineArgumentException extends RuntimeException{
+
+}
+
+//***********************************************
+class A{
+	public static void main(String []args){
+		if (args.length==0){
+			throw new  MissingCommandLineArgumentException();
+		}
+	}
+}
+class MissingCommandLineArgumentException extends RuntimeException{
+	MissingCommandLineArgumentException(){
+	
+	}
+	MissingCommandLineArgumentException(String s){
+		super(s)
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

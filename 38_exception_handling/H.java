@@ -3,13 +3,14 @@ class A {
 		//throw new ArithmeticException();
 		//throw new NullPointerException();
 		
-		/*
+		
 		try {
 			throw new Exception();	
 		} catch(Exception e) {
 			System.out.println("Exception");	
-		}*/
+		}
 
-		throw new Error();
+		// throw new Error();
+		throw new Object();
 	}
 }
