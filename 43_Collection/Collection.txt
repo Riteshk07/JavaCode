@@ -1,0 +1,53 @@
+list:(In general)
+1. index based collection 
+2. Duplicates record Allowed 
+3. Ordered but not sorted.
+
+ArrayList:
+1. Best Choice For frequent Itration 
+2. Not a good choice for Frequent Insertion and Deletion
+3. Implements random Accecss Interface Thus a ramdomly Accessbly class 
+4. Ararylist is  a non Threadsafe counter part of vector.
+
+Vector:
+
+1. vector is a Threadsafe counter part of ArrayList key methods of the class are synchronized.
+2. rest of he properties of same of the ArrayList.
+
+LinkedList:
+1. Best choice for frequent Intertion and Deletion not a good choice for iteration.
+
+Set:
+
+1. Duplicates record not allowed.
+2. Does not support indexing of record .
+3. 
+
+HashSet:
+1. a hash based collection class does provides an efficient accsess.
+2. Neither ordered nor sorted
+
+LinkedHashSet:(ordered but not sorted)
+1. Ordered counter part of HashSet. 
+2. A Hash based collection does provides uneficient access.
+
+TreeSet:(ordered and sorted)
+1. A sorted collection.
+
+PriorityQueue:
+1. A sorted collection. (ordered and sorted)
+2. Duplicates records Allowed
+
+Map:
+1. map holds records in key value pair forms.
+2. key can not be duplicate but value can.
+3. 
+
+HashMap:
+
+1. A hash based collection thus an efficient access.
+2. Best choice for frequent Insertion and deletion.
+3. Not a good choice for frequent iteration.
+4. null is allowed as key or as a value .
+5. non theradsafe counter part of Hashtable.
+6. Neither ordered nor sorted

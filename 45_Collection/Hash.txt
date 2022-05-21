@@ -1,0 +1,14 @@
+Hashtable :
+1. Threadsafe counter part of HashMap.
+2. null value Neither allow as a key nor value.
+3. All other feature same as HashMap.
+4. Neither ordered nor sorter.
+
+LinkedHashMap:
+1. Best coice for frequent Iteration.
+2. Not a good for Intertion and Deletion.
+3. Ordered counter part of HashMap.
+4. Ordered but not sorted.
+
+TreeMap:
+1. A sorted collection(ordered and sorted)

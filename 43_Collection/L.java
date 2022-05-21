@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+class A {
+	public static void main (String []args){
+		ArrayList x = new ArrayList();
+		
+		x.add(new String ("mohan"));
+		x.add(new String ("rohan"));
+		x.add(new String ("sohan"));
+		x.add(new String ("tohan"));
+		x.add(new String ("gohan"));
+
+		System.out.println(x);
+		System.out.println(x.get(2));
+		System.out.println(x.get(20));		// java.lang.IndexOutOfBoundsException: Index 20 out of bounds for length 5
+		System.out.println(x);
+	}
+}

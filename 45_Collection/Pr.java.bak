@@ -1,0 +1,50 @@
+import java.util.*;
+class A{
+    public static void main(String args[]){
+        Student x = new Student("mam",12);
+        Student y = new Student("oam",12);
+        int a = x.compareTo(y);
+        // System.out.println(a);
+        if(a == 1){
+            System.out.println("same");
+        }else{
+            System.out.println("not same");
+        }
+
+    }
+}
+class Student implements Comparable{
+    String name;
+    int age;
+    Student(String nam , int ag){
+        this.name = nam;
+        this.age = ag;
+    }
+    public int compareTo(Object obj){
+        System.out.println("please enter 1 according to name"+"\n"+"please enter 2 according to age");
+        
+        Scanner s = new Scanner(System.in);
+        int p = s.nextInt();
+        int flag = 0; int m = 0;
+        if(p==1){
+            Student a = this;
+            Student b = (Student)obj;
+
+            String nm1 = a.name;
+            String nm2 = b.name;
+           if(nm1.compareTo(nm2)==0){
+               flag = 1;
+           }
+        }else if(p==2){
+            Student a = this;
+            Student b = (Student)obj;
+            
+            int x = a.age;
+            int y = b.age;
+            if(x==y){
+                m=1;
+            }
+        }
+        return p==1 ? flag : m ;
+    }
+}
