@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.Map;
+
+class A {
+	public static void main (String [] args ){
+		ArrayList<?> a1 = new ArrayList<Student>();
+		ArrayList<Object>= new ArrayList<>();
+		ArrayList<? extends Object>= new ArrayList<>();
+	}
+}
+
+interface User {}
+
+class Student implements User{}
+class Employee implements User{}
+class Bus{}

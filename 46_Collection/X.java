@@ -4,11 +4,11 @@ import java.util.Arrays;
 class A{
 	public static void main (String [] args ){
 		Student [] x = {
-			new Student("mohan",16);
-			new Student("sohan",18);
-			new Student("tohan",19);
-			new Student("gohan",23);
-			new Student("bohan",12);
+			new Student("mohan",16),
+			new Student("sohan",18),
+			new Student("tohan",19),
+			new Student("gohan",23),
+			new Student("bohan",12)
 		};
 		for (Student t : x){
 			System.out.print(t+" ");

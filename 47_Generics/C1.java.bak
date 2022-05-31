@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+class A {
+	public static void main (String [] args){
+		ArrayList<Animal> x = new ArrayList<Cat>();
+		
+	}
+}
+
+class Animal{}
+
+class Cat extends Animal{}
+class Dog extends Animal{}

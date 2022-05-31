@@ -1,0 +1,6 @@
+class Shape{
+	int L ;
+	int W; 
+	int H;
+	
+}

@@ -8,7 +8,7 @@ class A {
 		ArrayList<U> x2 = new ArrayList<U>();
 		ArrayList<I> x3 = new ArrayList<I>();
 		ArrayList<DAYS> x4 = new ArrayList<DAYS>();
-		ArrayList<T.V> x5 = new ArrayList<T.V>();
+		ArrayList<T.V> x4 = new ArrayList<T.V>();
 	}
 }
 
