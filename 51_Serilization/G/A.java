@@ -5,13 +5,9 @@ class A{
 		Employee e = new Employee();
 		e.name = "Tamraj";
 		e.age = 120;
-		Address address = new NewAddress("JBP", "MP");
+		e.designation = "Manager";
+		e.salary = 135000.45f;
 		
-		
-		e.address= address;
-		
-		new ObjectOutputStream(new FileOutputStream("Kbc.txt")).writeObject(e);
-		
-		
+		new ObjectOutputStream(new FileOutputStream("shaktiman.txt")).writeObject(e);
 	}
 }
