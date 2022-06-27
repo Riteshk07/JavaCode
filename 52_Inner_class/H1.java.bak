@@ -1,0 +1,11 @@
+class A {
+	class H{
+		void pro(){
+			
+		}
+		
+		final static void info(){
+			
+		}
+	}
+}

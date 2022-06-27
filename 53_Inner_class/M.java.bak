@@ -1,0 +1,9 @@
+class A {
+	void pro(){
+		// Method Local Inner Class 
+		class B{
+			
+			static void info(){}
+		}
+	}
+}

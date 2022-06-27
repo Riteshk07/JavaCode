@@ -1,0 +1,34 @@
+show databases;
+
+create database schooldb;
+
+show databases;
+
+use schooldb
+
+show tables;
+
+create table students
+(
+	student_id int auto_increment primary key,
+	name varchar(40) not null,
+	email varchar(256) not null unique,
+	password varchar(20) not null
+
+);
+
+
+create table employees
+(
+    employee_id int auto_increment primary key,
+    name varchar(40) not null,
+    email varchar(256) not null unique,
+    password varchar(20) not null,
+    dob date
+);
+
+
+create table cities
+(
+	city_id int auto_increment
+)

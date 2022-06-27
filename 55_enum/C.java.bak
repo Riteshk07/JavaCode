@@ -1,0 +1,8 @@
+enum Days{
+	MONDAY, TUESDAY, WEDNESDY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+class A {
+	public static void main (String [] args){
+		Days day;
+	}
+}
